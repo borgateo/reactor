@@ -6,7 +6,7 @@ As a user, I should be able to click anywhere on the page and react with an emoj
 
 Focus on creating something good-looking, **delightful to use,** and adding fun details or features!
 
-![Watch the demo video](./media/demo.mp4)
+👉🏼 [Watch the demo video here](https://youtu.be/JU4ls-I4DR0)
 
 - Vite with HMR
 - Styled-components
