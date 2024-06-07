@@ -1,7 +1,7 @@
-import React, { MouseEvent, useState } from "react";
-import Container from "./components/Container.styled";
-import Reaction from "./components/Reaction";
-import Modal from "./components/Modal";
+import React, { MouseEvent, useState } from 'react';
+import Container from './components/Container.styled';
+import Reaction from './components/Reaction';
+import Modal from './components/Modal';
 
 export type Comment = {
   text: string;
@@ -17,7 +17,7 @@ type ReactionType = {
 };
 
 const DIMENSION = 45;
-const AUTHOR = "Matteo Borgato"; // TODO: get from local storage or user session
+const AUTHOR = 'Matteo Borgato'; // TODO: get from local storage or user session
 
 const App: React.FC = () => {
   const [reactions, setReactions] = useState<ReactionType[]>([]);
@@ -51,7 +51,7 @@ const App: React.FC = () => {
           x,
           y,
           author: AUTHOR,
-          emoji: "",
+          emoji: '',
           comments: [comment],
         },
       ]);

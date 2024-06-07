@@ -1,9 +1,9 @@
-import React, { useState, MouseEvent } from "react";
-import styled from "styled-components";
+import React, { useState, MouseEvent } from 'react';
+import styled from 'styled-components';
 // import EmojiPicker from "./EmojiPicker";
-import arrowUp from "../assets/up-arrow.svg";
-import { Comment as CommentType } from "../App";
-import Avatar from "./Avatar";
+import arrowUp from '../assets/up-arrow.svg';
+import { Comment as CommentType } from '../App';
+import Avatar from './Avatar';
 
 const ModalOverlay = styled.div`
   position: fixed;
@@ -78,7 +78,7 @@ type ModalProps = {
 const PADDING = 10;
 const Modal: React.FC<ModalProps> = ({ x, y, onClose, onSave, comments }) => {
   // const [emoji, setEmoji] = useState<string>("");
-  const [comment, setComment] = useState<string>("");
+  const [comment, setComment] = useState<string>('');
 
   const handleOverlayClick = (e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
@@ -99,7 +99,7 @@ const Modal: React.FC<ModalProps> = ({ x, y, onClose, onSave, comments }) => {
         {comments.map((comment, index) => (
           <Comment key={index}>
             <Avatar name={comment.author} />
-            <span style={{ marginLeft: "35px" }}>{comment.text}</span>
+            <span style={{ marginLeft: '35px' }}>{comment.text}</span>
           </Comment>
         ))}
         <InputContainer>

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Picker = styled.div<{ x: number; y: number }>`
   position: absolute;
@@ -19,7 +19,7 @@ const Emoji = styled.div`
   font-size: 24px;
 `;
 
-const emojis = ["😀", "😂", "😍", "👍", "😢", "😡"];
+const emojis = ['😀', '😂', '😍', '👍', '😢', '😡'];
 
 type EmojiPickerProps = {
   x: number;

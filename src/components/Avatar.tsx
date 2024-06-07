@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 type AvatarProps = {
   name: string;
@@ -32,7 +32,7 @@ const Avatar: React.FC<AvatarProps> = ({ name, date }) => {
     <AvatarContainer>
       <StyledAvatar
         src={`https://api.multiavatar.com/${name}.svg`}
-        alt={name || "anonymous"}
+        alt={name || 'anonymous'}
       />
       <Name>{name}</Name>
       <DateText>{date}</DateText>

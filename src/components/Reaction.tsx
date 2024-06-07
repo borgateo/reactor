@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Comment } from "../App";
+import React from 'react';
+import styled from 'styled-components';
+import { Comment } from '../App';
 
 const ReactionContainer = styled.div<{ x: number; y: number }>`
   position: absolute;
